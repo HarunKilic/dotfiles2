@@ -3,6 +3,8 @@
 create_symlinks() {
   script_dir=$(dirname "$(readlink -f "$0")")
 
+  echo "SCRIPT DIR: $script_dir"
+
   files=$(find -maxdepth 1 -type f -name ".*")
 
   for file in $files; do
