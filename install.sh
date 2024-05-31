@@ -17,7 +17,7 @@ create_symlinks() {
   if [ ! -d ~/.config/nvim ]
   then
     mkdir -p ~/.config/
-    ln -s $script_dir/nvim ~/.config
+    ln -s $script_dir/nvim/.config/nvim ~/.config
   fi
 }
 
